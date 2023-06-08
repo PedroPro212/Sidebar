@@ -39,6 +39,38 @@ header{
     padding-bottom: 8rem;
 }
 
+.logo{
+    display: flex;
+    position: relative;
+    height: 4rem;
+    background-color: #2A2C30;
+    color: #FFF;
+    border-right: solid 1px #838383;
+    border-bottom: solid 1px #838383;
+    padding-left: 2.5rem;
+}
+.logo img{
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pagina{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background-color: #2A2C30;
+    border-bottom: solid 1px #838383;
+    color: #FFF;
+}
+.pagina h1{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
 header::-webkit-scrollbar{
     width: 7px;
 }
@@ -63,6 +95,7 @@ header details{
 header details summary{
     font-size: 1.5rem;
     color: #FFF;
+    padding-bottom: 1rem;
 }
 
 header img{
