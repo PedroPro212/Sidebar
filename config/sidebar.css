@@ -65,10 +65,23 @@ header{
     background-color: #2A2C30;
     border-bottom: solid 1px #838383;
     color: #FFF;
+    justify-content: space-between;
 }
 .pagina h1{
     font-size: 1.5rem;
     padding-bottom: 1rem;
+}
+.pagina p{
+    font-size: 1.2rem;
+    margin-right: 0;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.pagina img{
+    width: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
 }
 
 header::-webkit-scrollbar{
@@ -80,9 +93,18 @@ header::-webkit-scrollbar-thumb{
 
 header div{
     display: table;
-    align-items: center;
     cursor: pointer;
+    /*width: 100%;*/
 }
+    /*header details div:hover{
+        background-color: #838383;
+        border-radius: 0.5rem;
+        padding: 1px;
+    }
+    header details div p:hover{
+        width: 100%;
+        text-align: left;
+    }*/
 
 header details{
     display: table;
@@ -90,12 +112,17 @@ header details{
     margin-bottom: 2rem;
     padding-left: 1rem;
     cursor: pointer;
+    text-align: left;
 }
 
 header details summary{
     font-size: 1.5rem;
     color: #FFF;
     padding-bottom: 1rem;
+}
+
+header details div p{
+    text-align: left;
 }
 
 header img{
@@ -109,4 +136,24 @@ header p{
     font-size: 1.2rem;
     color: #FFF;
     padding-left: 1rem;
+}
+
+/*-------- Modo de cor (Dark ou Light) --------*/
+
+.dark-mode{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    display: none;
+    width: 80%;
+    background-color: #2A2C30;
+    border: solid 1px #838383;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.dark-mode div{
+    margin-top: 1rem;
+    margin-left: 0;
 }

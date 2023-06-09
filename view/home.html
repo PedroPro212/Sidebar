@@ -21,16 +21,22 @@
                 <div class="row">
                     <div class="logo col-sm-2">
                         <p>Logo</p>
-                        <img src="../imgs/header/img-modo.svg" alt="Modo">
+                        <img src="../imgs/header/img-modo.svg" alt="Modo" onclick="escolherTema()">
                     </div>
                     <div class="col-sm-10 pagina">
                         <h1>Página Inicial</h1>
+                        <p>Nova atividade <img src="../imgs/header/img-modo.svg" alt="Seta"></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <header class="col-sm-2">
+            
+            <div id="tema" class="dark-mode center-block">
+                <p>Comunidade</p>
+                <div><img src="../imgs/header/sol.svg" alt="Sol"><p>Escolher modo Claro</p></div>
+            </div>
 
             <div class="opcPInicial"><img src="../imgs/header/house.svg" alt="Home"><p>Página inicial</p></div>
 
@@ -118,5 +124,7 @@
             </details>
         </header>
     </div>
+
+    <script src="../config/sidebar.js"></script>
 </body>
 </html>
